@@ -14,6 +14,12 @@
 		88DCCB431E2F53540011449F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DCCB411E2F53540011449F /* LaunchScreen.storyboard */; };
 		88DCCB4E1E2F53550011449F /* MultipleMVCAndSegueDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCB4D1E2F53550011449F /* MultipleMVCAndSegueDemoTests.swift */; };
 		88DCCB591E2F53550011449F /* MultipleMVCAndSegueDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCB581E2F53550011449F /* MultipleMVCAndSegueDemoUITests.swift */; };
+		88DCCB671E2F5C990011449F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCB661E2F5C990011449F /* CollectionViewController.swift */; };
+		88DCCB691E2F5FFA0011449F /* PresentModallyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCB681E2F5FFA0011449F /* PresentModallyController.swift */; };
+		88DCCB6C1E2F69720011449F /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCB6A1E2F69720011449F /* CoreDataDemo.xcdatamodeld */; };
+		88DCCBB91E2F76750011449F /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCBB71E2F76750011449F /* Photo+CoreDataClass.swift */; };
+		88DCCBBA1E2F76750011449F /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCBB81E2F76750011449F /* Photo+CoreDataProperties.swift */; };
+		88DCCBBD1E30776D0011449F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCCBBC1E30776D0011449F /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		88DCCB541E2F53550011449F /* MultipleMVCAndSegueDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleMVCAndSegueDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DCCB581E2F53550011449F /* MultipleMVCAndSegueDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleMVCAndSegueDemoUITests.swift; sourceTree = "<group>"; };
 		88DCCB5A1E2F53550011449F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DCCB661E2F5C990011449F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		88DCCB681E2F5FFA0011449F /* PresentModallyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentModallyController.swift; sourceTree = "<group>"; };
+		88DCCB6B1E2F69720011449F /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		88DCCBB71E2F76750011449F /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88DCCBB81E2F76750011449F /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		88DCCBBC1E30776D0011449F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,13 @@
 		88DCCB371E2F53540011449F /* MultipleMVCAndSegueDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88DCCBB41E2F73610011449F /* Classes */,
 				88DCCB381E2F53540011449F /* AppDelegate.swift */,
-				88DCCB3A1E2F53540011449F /* ViewController.swift */,
 				88DCCB3C1E2F53540011449F /* Main.storyboard */,
 				88DCCB3F1E2F53540011449F /* Assets.xcassets */,
 				88DCCB411E2F53540011449F /* LaunchScreen.storyboard */,
 				88DCCB441E2F53540011449F /* Info.plist */,
+				88DCCB6A1E2F69720011449F /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = MultipleMVCAndSegueDemo;
 			sourceTree = "<group>";
@@ -123,6 +136,43 @@
 				88DCCB5A1E2F53550011449F /* Info.plist */,
 			);
 			path = MultipleMVCAndSegueDemoUITests;
+			sourceTree = "<group>";
+		};
+		88DCCBB41E2F73610011449F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				88DCCBBB1E30773F0011449F /* Views */,
+				88DCCBB61E2F73BC0011449F /* Models */,
+				88DCCBB51E2F737A0011449F /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		88DCCBB51E2F737A0011449F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88DCCB661E2F5C990011449F /* CollectionViewController.swift */,
+				88DCCB681E2F5FFA0011449F /* PresentModallyController.swift */,
+				88DCCB3A1E2F53540011449F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88DCCBB61E2F73BC0011449F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88DCCBB71E2F76750011449F /* Photo+CoreDataClass.swift */,
+				88DCCBB81E2F76750011449F /* Photo+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88DCCBBB1E30773F0011449F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88DCCBBC1E30776D0011449F /* CollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DCCBBA1E2F76750011449F /* Photo+CoreDataProperties.swift in Sources */,
+				88DCCBB91E2F76750011449F /* Photo+CoreDataClass.swift in Sources */,
+				88DCCBBD1E30776D0011449F /* CollectionViewCell.swift in Sources */,
+				88DCCB691E2F5FFA0011449F /* PresentModallyController.swift in Sources */,
+				88DCCB671E2F5C990011449F /* CollectionViewController.swift in Sources */,
 				88DCCB3B1E2F53540011449F /* ViewController.swift in Sources */,
+				88DCCB6C1E2F69720011449F /* CoreDataDemo.xcdatamodeld in Sources */,
 				88DCCB391E2F53540011449F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +559,7 @@
 				88DCCB5F1E2F53550011449F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88DCCB601E2F53550011449F /* Build configuration list for PBXNativeTarget "MultipleMVCAndSegueDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +568,7 @@
 				88DCCB621E2F53550011449F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88DCCB631E2F53550011449F /* Build configuration list for PBXNativeTarget "MultipleMVCAndSegueDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,8 +577,22 @@
 				88DCCB651E2F53550011449F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88DCCB6A1E2F69720011449F /* CoreDataDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88DCCB6B1E2F69720011449F /* CoreDataDemo.xcdatamodel */,
+			);
+			currentVersion = 88DCCB6B1E2F69720011449F /* CoreDataDemo.xcdatamodel */;
+			path = CoreDataDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 88DCCB2D1E2F53540011449F /* Project object */;
 }
